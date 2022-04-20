@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import BarGraph from "./BarGraph";
+import LineGraph from "./LineGraph";
+import ScatterPlot from "./ScatterPlot";
+// import Svg from "./Svg";
+import WorldMap from "./WorldMap";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<BarGraph />
+			<ScatterPlot />
+			{/* <Svg /> */}
+			<LineGraph />
+			<div
+				style={{
+					display: "flex",
+					justifyContent: "center",
+					margin: "50px auto",
+				}}
+			>
+				<WorldMap />
+			</div>
+		</div>
+	);
 }
 
 export default App;

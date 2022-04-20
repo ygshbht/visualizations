@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.svg-test {
+  stroke-width: 2;
+  stroke: black;
+  background-color: green;
+  margin: 100px auto;
+  display: block;
+  rect {
+    transition: 1s;
+
+    &:hover {
+      transform-origin: 60 110;
+      transform: scaleY(1.1);
+    }
+  }
+}
+
+.country {
+  fill: rgb(179, 200, 179);
+  stroke: black;
+  &:hover {
+    box-shadow: 0 0 10px black;
+    fill: pink;
+  }
+}
