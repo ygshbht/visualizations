@@ -8,7 +8,7 @@ function App() {
 		<div className="App">
 			<BarGraph />
 			<ScatterPlot />
-			{/* <Svg /> */}
+
 			<LineGraph />
 			<div
 				style={{
