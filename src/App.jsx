@@ -1,12 +1,14 @@
 import BarGraph from "./BarGraph";
 import LineGraph from "./LineGraph";
 import ScatterPlot from "./ScatterPlot";
+import Test from "./test/Test";
 // import Svg from "./Svg";
-import WorldMap from "./WorldMap";
+
+import WorldMap from "./WorldMap/WorldMap";
 function App() {
 	return (
 		<div className="App">
-			<BarGraph />
+			{/* <BarGraph />
 			<ScatterPlot />
 
 			<LineGraph />
@@ -18,7 +20,8 @@ function App() {
 				}}
 			>
 				<WorldMap />
-			</div>
+			</div> */}
+			<Test />
 		</div>
 	);
 }
